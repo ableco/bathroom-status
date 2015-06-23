@@ -1,0 +1,27 @@
+html, body, .container {
+  height: 100%;
+}
+
+.container {
+  display: table;
+  vertical-align: middle;
+  text-align: center
+}
+
+.vertical-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 72px;
+}
+
+.vacant {
+  color: #72AF44;
+}
+
+.occupied {
+  color: #FF3448;
+}
