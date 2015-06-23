@@ -14,7 +14,7 @@ get '/' do
 end
 
 get '/index.json' do
-  "#{getLastEntry['status']} as of #{time_ago} ago"
+  "#{last_entry['status']} as of #{time_ago} ago"
 end
 
 
