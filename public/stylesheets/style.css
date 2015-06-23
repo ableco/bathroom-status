@@ -25,3 +25,8 @@ h1 {
 .occupied {
   color: #FF3448;
 }
+
+h4 {
+  font-size: 14px;
+  font-style: italic;
+}
