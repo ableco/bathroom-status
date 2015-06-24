@@ -21,7 +21,7 @@ end
 # Private
 #
 def time_ago
-  time_ago_in_words(Time.parse(last_entry['timestamp']))
+  time_ago_in_words(Time.parse(last_entry['timestamp']), include_seconds: true)
 end
 
 def last_entry
