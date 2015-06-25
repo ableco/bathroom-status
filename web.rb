@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'open-uri'
 require 'json'
+require 'date'
 require 'action_view'
 require 'action_view/helpers'
 include ActionView::Helpers::DateHelper
@@ -8,8 +9,11 @@ include ActionView::Helpers::DateHelper
 
 set :public_folder, Proc.new { File.join(root, "public") }
 
+IMAGES = %w{champagne dogs tall ice-cream coffee oops cupcake ghost diaper vegan peace deal-with-it shhhh romantic}
+
 get '/' do
   @status, @date = last_entry['status'], time_ago
+  @image_name = IMAGES[Date.today.mday % 14]
   erb :index
 end
 
