@@ -29,6 +29,6 @@ def time_ago
 end
 
 def last_entry
-  json = JSON.parse(open("https://data.sparkfun.com/output/JxxL7ZLvaMSNMJyOxLYW.json").read)
+  json = JSON.parse(open("https://data.sparkfun.com/output/JxxL7ZLvaMSNMJyOxLYW.json?limit=5").read)
   json[0]
 end
